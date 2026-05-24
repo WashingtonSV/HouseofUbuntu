@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WSV Brand Universe — Brand Guidelines 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700;800;900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  /* === UNIVERSAL GOLD === */
+  --gold-electric: #F0A500;
+  --gold-deep:     #C8972A;
+  --gold-tint:     #FFF3D0;
+
+  /* === UNIVERSAL NEUTRALS === */
+  --night-black:  #080808;
+  --charcoal:     #1C1C1A;
+  --warm-grey:    #8A8680;
+  --warm-grey-lt: #4A4845;
+  --warm-white:   #F5F3EE;
+  --cream:        #F2F0EB;
+  --border-dark:  rgba(255,255,255,0.07);
+  --border-light: rgba(0,0,0,0.08);
+
+  /* === HOU === */
+  --hou-sage:     #7BA882;
+  --hou-sage-dim: rgba(123,168,130,0.15);
+  --hou-cream:    #F2F0EB;
+
+  /* === MITO === */
+  --mito-green:   #1DB954;
+  --mito-green-dim: rgba(29,185,84,0.12);
+  --mito-forest:  #0D2E1A;
+  --mito-white:   #F5F3EE;
+
+  /* === WES === */
+  --wes-red:      #E02B1D;
+  --wes-red-dim:  rgba(224,43,29,0.12);
+
+  /* === WFF === */
+  --wff-terra:    #B05A3A;
+  --wff-terra-dim:rgba(176,90,58,0.12);
+
+  /* === TYPE === */
+  --font-display: 'Barlow Condensed', sans-serif;
+  --font-body:    'Nunito Sans', sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--night-black);
+  color: var(--cream);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+/* ─── SCROLLBAR ─── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #2a2a28; border-radius: 3px; }
+
+/* ─── NAV ─── */
+.nav {
+  position: fixed;
+  top: 0; left: 0;
+  width: 220px;
+  height: 100vh;
+  background: rgba(8,8,8,0.97);
+  border-right: 1px solid var(--border-dark);
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  z-index: 100;
+  overflow-y: auto;
+}
+.nav-brand {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-dark);
+}
+.nav-eyebrow {
+  font-family: var(--font-display);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold-electric);
+  margin-bottom: 4px;
+}
+.nav-title {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--cream);
+  line-height: 1;
+  letter-spacing: 0.02em;
+}
+.nav-version {
+  font-size: 11px;
+  color: var(--warm-grey);
+  margin-top: 4px;
+}
+.nav-section {
+  font-family: var(--font-display);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--warm-grey-lt);
+  margin: 1.25rem 0 6px;
+}
+.nav a {
+  display: block;
+  font-size: 12px;
+  color: var(--warm-grey);
+  text-decoration: none;
+  padding: 5px 0;
+  transition: color 0.15s;
+  border-left: 2px solid transparent;
+  padding-left: 10px;
+  margin-left: -10px;
+}
+.nav a:hover { color: var(--cream); border-left-color: var(--gold-electric); }
+
+/* ─── MAIN ─── */
+.main {
+  margin-left: 220px;
+  padding: 0;
+}
+
+/* ─── SECTIONS ─── */
+.section {
+  padding: 5rem 4rem;
+  border-bottom: 1px solid var(--border-dark);
+  max-width: 1100px;
+}
+.section.light {
+  background: var(--warm-white);
+  color: var(--charcoal);
+  max-width: 100%;
+  padding: 5rem 4rem;
+}
+.section.light .section-eyebrow { color: var(--gold-deep); }
+.section.light .section-title { color: var(--charcoal); }
+.section.light .section-intro { color: #5a5855; }
+.section.light p { color: #5a5855; }
+
+.section-eyebrow {
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold-electric);
+  margin-bottom: 10px;
+}
+.section-title {
+  font-family: var(--font-display);
+  font-size: 52px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--cream);
+  line-height: 0.95;
+  letter-spacing: 0.01em;
+  margin-bottom: 1rem;
+}
+.section-intro {
+  font-size: 15px;
+  color: var(--warm-grey);
+  max-width: 580px;
+  line-height: 1.7;
+  font-weight: 300;
+  margin-bottom: 3rem;
+}
+
+/* ─── HERO ─── */
+.hero {
+  background: var(--night-black);
+  padding: 7rem 4rem 6rem;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border-dark);
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -100px; left: 50%;
+  transform: translateX(-50%);
+  width: 600px; height: 400px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse, rgba(240,165,0,0.08) 0%, transparent 65%);
+  pointer-events: none;
+}
+.hero-ws {
+  font-family: var(--font-display);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold-electric);
+  margin-bottom: 1.5rem;
+}
+.hero-title {
+  font-family: var(--font-display);
+  font-size: 96px;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 0.88;
+  letter-spacing: 0.01em;
+  color: var(--cream);
+  margin-bottom: 1.5rem;
+}
+.hero-title em {
+  color: var(--gold-electric);
+  font-style: normal;
+}
+.hero-sub {
+  font-size: 16px;
+  color: var(--warm-grey);
+  font-weight: 300;
+  max-width: 520px;
+  line-height: 1.7;
+  margin-bottom: 3rem;
+}
+.hero-meta {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.hero-meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.hero-meta-label {
+  font-family: var(--font-display);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--warm-grey-lt);
+}
+.hero-meta-val {
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--cream);
+  letter-spacing: 0.03em;
+}
+.hero-watermark {
+  position: absolute;
+  right: -40px; bottom: -40px;
+  font-family: var(--font-display);
+  font-size: 220px;
+  font-weight: 900;
+  color: rgba(240,165,0,0.03);
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: -4px;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* ─── HIERARCHY DIAGRAM ─── */
+.hierarchy {
+  position: relative;
+  padding: 2rem 0;
+}
+.h-parent {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(200,151,42,0.1);
+  border: 1px solid rgba(200,151,42,0.3);
+  border-radius: 8px;
+  padding: 12px 20px;
+  margin-bottom: 2rem;
+}
+.h-parent-name {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  letter-spacing: 0.04em;
+}
+.h-parent-role {
+  font-size: 12px;
+  color: var(--warm-grey);
+}
+.h-line {
+  width: 1px;
+  height: 32px;
+  background: var(--border-dark);
+  margin-left: 20px;
+  margin-bottom: 0;
+}
+.h-children {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.h-child {
+  border-radius: 8px;
+  padding: 14px 16px;
+  border: 1px solid var(--border-dark);
+  position: relative;
+}
+.h-child::before {
+  content: '';
+  position: absolute;
+  top: -32px; left: 20px;
+  width: 1px; height: 32px;
+  background: var(--border-dark);
+}
+.h-child-tag {
+  font-family: var(--font-display);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.h-child-name {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--cream);
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+}
+.h-child-role {
+  font-size: 11px;
+  color: var(--warm-grey);
+  margin-top: 4px;
+  line-height: 1.4;
+}
+.h-note {
+  font-size: 11px;
+  color: var(--warm-grey);
+  margin-top: 6px;
+  font-style: italic;
+}
+
+/* ─── ENTITY CARDS ─── */
+.entity-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 12px;
+  margin-top: 2rem;
+}
+.entity-card {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--border-dark);
+}
+.entity-preview {
+  padding: 2rem 1.75rem 1.5rem;
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 6px;
+  position: relative;
+  overflow: hidden;
+}
+.entity-preview::after {
+  content: attr(data-name);
+  position: absolute;
+  right: -10px; bottom: -20px;
+  font-family: var(--font-display);
+  font-size: 72px;
+  font-weight: 900;
+  opacity: 0.06;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: -1px;
+  pointer-events: none;
+}
+.entity-tag {
+  font-family: var(--font-display);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.entity-name {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 0.01em;
+}
+.entity-dots {
+  display: flex;
+  gap: 5px;
+  margin-top: 4px;
+}
+.e-dot {
+  width: 12px; height: 12px;
+  border-radius: 50%;
+  border: 0.5px solid rgba(255,255,255,0.15);
+}
+.entity-body {
+  padding: 1.25rem 1.75rem;
+  background: var(--surface, #111111);
+}
+.entity-full-name {
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--cream);
+  margin-bottom: 4px;
+}
+.entity-mission {
+  font-size: 12px;
+  color: var(--warm-grey);
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.entity-palette-label {
+  font-family: var(--font-display);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--warm-grey-lt);
+  margin-bottom: 6px;
+}
+.palette-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.palette-chip {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: center;
+}
+.p-swatch {
+  width: 32px; height: 32px;
+  border-radius: 6px;
+  border: 0.5px solid rgba(255,255,255,0.1);
+}
+.p-hex {
+  font-size: 9px;
+  color: var(--warm-grey);
+  font-family: monospace;
+  letter-spacing: 0.02em;
+}
+.p-name {
+  font-size: 9px;
+  color: var(--warm-grey-lt);
+  text-align: center;
+  line-height: 1.2;
+}
+.entity-mode {
+  margin-top: 10px;
+  font-size: 11px;
+  color: var(--warm-grey);
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.mode-pill {
+  font-family: var(--font-display);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+/* ─── COLOR TOKENS ─── */
+.token-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+.token {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.token-swatch {
+  height: 64px;
+  border-radius: 8px;
+  border: 0.5px solid var(--border-dark);
+}
+.token-name {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--cream);
+  line-height: 1.2;
+}
+.token-hex {
+  font-size: 10px;
+  color: var(--warm-grey);
+  font-family: monospace;
+}
+.token-role {
+  font-size: 10px;
+  color: var(--warm-grey-lt);
+  line-height: 1.3;
+}
+.color-group-label {
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold-electric);
+  margin-bottom: 12px;
+  margin-top: 2rem;
+}
+.color-group-label:first-child { margin-top: 0; }
+
+/* ─── TYPOGRAPHY ─── */
+.type-specimens {
+  display: grid;
+  gap: 1px;
+  border: 1px solid var(--border-dark);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+.type-row {
+  padding: 1.5rem 2rem;
+  background: #0E0E0C;
+  display: flex;
+  align-items: baseline;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.type-row.light { background: var(--warm-white); }
+.type-meta-col {
+  min-width: 140px;
+  flex-shrink: 0;
+}
+.type-role-label {
+  font-family: var(--font-display);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--warm-grey-lt);
+  margin-bottom: 2px;
+}
+.type-spec {
+  font-size: 10px;
+  color: var(--warm-grey-lt);
+  font-family: monospace;
+  line-height: 1.5;
+}
+.type-light .type-role-label,
+.type-light .type-spec { color: #aaa; }
+
+.t-display { font-family: var(--font-display); font-weight: 900; text-transform: uppercase; letter-spacing: 0.01em; color: var(--cream); line-height: 0.92; }
+.t-display.on-light { color: var(--charcoal); }
+.t-h1 { font-size: 56px; }
+.t-h2 { font-size: 40px; }
+.t-h3 { font-size: 28px; }
+.t-h4 { font-size: 20px; }
+.t-eyebrow { font-family: var(--font-display); font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold-electric); }
+.t-body { font-family: var(--font-body); font-size: 15px; font-weight: 300; color: var(--warm-grey); line-height: 1.7; }
+.t-body-med { font-family: var(--font-body); font-size: 15px; font-weight: 500; color: var(--cream); }
+.t-caption { font-family: var(--font-body); font-size: 11px; font-weight: 300; color: var(--warm-grey); letter-spacing: 0.02em; }
+.t-body.on-light { color: #5a5855; }
+.t-body-med.on-light { color: var(--charcoal); }
+
+/* ─── USAGE RULES ─── */
+.rules-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+.rule-card {
+  border-radius: 8px;
+  border: 1px solid var(--border-dark);
+  padding: 1.25rem 1.5rem;
+  background: #0E0E0C;
+}
+.rule-card.do { border-left: 3px solid var(--hou-sage); }
+.rule-card.dont { border-left: 3px solid var(--wes-red); }
+.rule-label {
+  font-family: var(--font-display);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.rule-label.do { color: var(--hou-sage); }
+.rule-label.dont { color: var(--wes-red); }
+.rule-item {
+  font-size: 12.5px;
+  color: var(--warm-grey);
+  line-height: 1.6;
+  padding: 4px 0;
+  border-bottom: 0.5px solid var(--border-dark);
+}
+.rule-item:last-child { border-bottom: none; }
+
+/* ─── DARK/LIGHT GUIDE ─── */
+.mode-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+.mode-card {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--border-dark);
+}
+.mode-preview {
+  padding: 2rem;
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+.mode-footer {
+  padding: 10px 16px;
+  font-size: 11px;
+  color: var(--warm-grey);
+  border-top: 0.5px solid var(--border-dark);
+  background: #0E0E0C;
+}
+.mode-use-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 8px;
+}
+.use-chip {
+  font-family: var(--font-display);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 4px;
+  border: 0.5px solid var(--border-dark);
+  color: var(--warm-grey);
+}
+
+/* ─── DIVIDER ─── */
+.divider {
+  height: 0.5px;
+  background: var(--border-dark);
+  margin: 2.5rem 0;
+}
+
+/* ─── TABLE ─── */
+.ref-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12.5px;
+  margin-top: 1rem;
+}
+.ref-table th {
+  font-family: var(--font-display);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--warm-grey-lt);
+  padding: 8px 14px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-dark);
+}
+.ref-table td {
+  padding: 10px 14px;
+  color: var(--warm-grey);
+  border-bottom: 0.5px solid var(--border-dark);
+  vertical-align: top;
+  line-height: 1.5;
+}
+.ref-table td:first-child { color: var(--cream); font-weight: 500; }
+.ref-table tr:last-child td { border-bottom: none; }
+.hex-code {
+  font-family: monospace;
+  font-size: 11px;
+  color: var(--gold-electric);
+  background: rgba(240,165,0,0.08);
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+/* ─── FOOTER ─── */
+.doc-footer {
+  padding: 3rem 4rem;
+  border-top: 1px solid var(--border-dark);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.footer-brand {
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--cream);
+  letter-spacing: 0.04em;
+}
+.footer-meta {
+  font-size: 11px;
+  color: var(--warm-grey);
+  letter-spacing: 0.04em;
+}
+.footer-gold { color: var(--gold-electric); }
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 900px) {
+  .nav { display: none; }
+  .main { margin-left: 0; }
+  .section, .hero { padding: 3rem 1.5rem; }
+  .hero-title { font-size: 56px; }
+  .h-children { grid-template-columns: 1fr 1fr; }
+  .rules-grid, .mode-cards { grid-template-columns: 1fr; }
+  .entity-cards { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- ─── NAV ─── -->
+<nav class="nav">
+  <div class="nav-brand">
+    <p class="nav-eyebrow">Brand Universe</p>
+    <p class="nav-title">WSV</p>
+    <p class="nav-version">Guidelines v1.0 · 2026</p>
+  </div>
+  <p class="nav-section">Foundation</p>
+  <a href="#overview">Overview</a>
+  <a href="#hierarchy">Brand Hierarchy</a>
+  <p class="nav-section">Visual System</p>
+  <a href="#colors">Color System</a>
+  <a href="#typography">Typography</a>
+  <a href="#mode">Dark vs. Light</a>
+  <p class="nav-section">Entities</p>
+  <a href="#wsv">WSV</a>
+  <a href="#hou">House of Ubuntu</a>
+  <a href="#mito">Mitochondrion</a>
+  <a href="#wes">Washington Entertainment</a>
+  <a href="#wff">Washington Family Foundation</a>
+  <p class="nav-section">Usage</p>
+  <a href="#rules">Rules & Standards</a>
+  <a href="#reference">Quick Reference</a>
+</nav>
+
+<!-- ─── MAIN ─── -->
+<main class="main">
+
+  <!-- HERO -->
+  <section class="hero" id="overview">
+    <p class="hero-ws">Washington Strategic Ventures — Brand Universe Guidelines v1.0</p>
+    <h1 class="hero-title">One<br>Universe.<br><em>Five Brands.</em></h1>
+    <p class="hero-sub">A unified visual system built on a single gold thread — connecting WSV, House of Ubuntu, Mitochondrion, Washington Entertainment Studios, and Washington Family Foundation into one coherent, scalable brand family.</p>
+    <div class="hero-meta">
+      <div class="hero-meta-item">
+        <span class="hero-meta-label">Issued</span>
+        <span class="hero-meta-val">May 2026</span>
+      </div>
+      <div class="hero-meta-item">
+        <span class="hero-meta-label">Version</span>
+        <span class="hero-meta-val">1.0</span>
+      </div>
+      <div class="hero-meta-item">
+        <span class="hero-meta-label">Status</span>
+        <span class="hero-meta-val" style="color:var(--gold-electric)">Active</span>
+      </div>
+      <div class="hero-meta-item">
+        <span class="hero-meta-label">Confidential</span>
+        <span class="hero-meta-val">WSV Internal</span>
+      </div>
+    </div>
+    <div class="hero-watermark">WSV</div>
+  </section>
+
+  <!-- HIERARCHY -->
+  <section class="section" id="hierarchy">
+    <p class="section-eyebrow">01 — Brand Hierarchy</p>
+    <h2 class="section-title">The<br>Structure</h2>
+    <p class="section-intro">WSV is the quiet holding company. Its subsidiaries are the public-facing brands — each with a distinct identity, audience, and purpose, but all connected by the gold thread.</p>
+
+    <div class="hierarchy">
+      <div class="h-parent">
+        <div>
+          <p class="h-parent-name" style="font-family:var(--font-display);font-size:16px;font-weight:800;text-transform:uppercase;color:var(--gold-deep);letter-spacing:0.04em">Washington Strategic Ventures</p>
+          <p class="h-parent-role" style="font-size:12px;color:var(--warm-grey)">Holding company — parent to all entities. Quiet, strategic, institutional.</p>
+        </div>
+      </div>
+      <div class="h-line"></div>
+      <div class="h-children">
+        <div class="h-child" style="border-top: 2px solid var(--gold-electric);">
+          <p class="h-child-tag" style="color:var(--gold-electric)">Health · Wellness</p>
+          <p class="h-child-name">House of Ubuntu</p>
+          <p class="h-child-role">Community wellness programming. Streetlights NYC lives here as an event series.</p>
+        </div>
+        <div class="h-child" style="border-top: 2px solid var(--mito-green);">
+          <p class="h-child-tag" style="color:var(--mito-green)">Education · Innovation</p>
+          <p class="h-child-name">Mitochondrion</p>
+          <p class="h-child-role">Workforce development, education programming, and innovation initiatives.</p>
+        </div>
+        <div class="h-child" style="border-top: 2px solid var(--wes-red);">
+          <p class="h-child-tag" style="color:var(--wes-red)">Content · Entertainment</p>
+          <p class="h-child-name">Washington Entertainment Studios</p>
+          <p class="h-child-role">Content creation, entertainment production, and media ventures.</p>
+        </div>
+        <div class="h-child" style="border-top: 2px solid var(--wff-terra);">
+          <p class="h-child-tag" style="color:var(--wff-terra)">Nonprofit · Community</p>
+          <p class="h-child-name">Washington Family Foundation</p>
+          <p class="h-child-role">Nonprofit arm. Brand identity to be fully established as the entity develops.</p>
+          <p class="h-note">Identity in development</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COLORS -->
+  <section class="section" id="colors">
+    <p class="section-eyebrow">02 — Color System</p>
+    <h2 class="section-title">Color<br>Universe</h2>
+    <p class="section-intro">Electric Gold (#F0A500) is the single thread that runs through every entity. It is the only color that appears in all five brands — the visual signature of the WSV universe.</p>
+
+    <p class="color-group-label">Universal Gold</p>
+    <div class="token-grid">
+      <div class="token">
+        <div class="token-swatch" style="background:#F0A500"></div>
+        <p class="token-name">Electric Gold</p>
+        <p class="token-hex">#F0A500</p>
+        <p class="token-role">Primary — all brands</p>
+      </div>
+      <div class="token">
+        <div class="token-swatch" style="background:#C8972A"></div>
+        <p class="token-name">Deep Gold</p>
+        <p class="token-hex">#C8972A</p>
+        <p class="token-role">Formal / muted use</p>
+      </div>
+      <div class="token">
+        <div class="token-swatch" style="background:#FFF3D0;border-color:rgba(255,255,255,0.1)"></div>
+        <p class="token-name">Gold Tint</p>
+        <p class="token-hex">#FFF3D0</p>
+        <p class="token-role">Backgrounds, highlights</p>
+      </div>
+    </div>
+
+    <p class="color-group-label">Universal Neutrals</p>
+    <div class="token-grid">
+      <div class="token">
+        <div class="token-swatch" style="background:#080808"></div>
+        <p class="token-name">Night Black</p>
+        <p class="token-hex">#080808</p>
+        <p class="token-role">Dark canvas</p>
+      </div>
+      <div class="token">
+        <div class="token-swatch" style="background:#1C1C1A"></div>
+        <p class="token-name">Charcoal</p>
+        <p class="token-hex">#1C1C1A</p>
+        <p class="token-role">Dark surfaces</p>
+      </div>
+      <div class="token">
+        <div class="token-swatch" style="background:#8A8680"></div>
+        <p class="token-name">Warm Grey</p>
+        <p class="token-hex">#8A8680</p>
+        <p class="token-role">Secondary text</p>
+      </div>
+      <div class="token">
+        <div class="token-swatch" style="background:#F2F0EB;border-color:rgba(255,255,255,0.1)"></div>
+        <p class="token-name">Cream</p>
+        <p class="token-hex">#F2F0EB</p>
+        <p class="token-role">Text on dark · HOU light canvas</p>
+      </div>
+      <div class="token">
+        <div class="token-swatch" style="background:#F5F3EE;border-color:rgba(255,255,255,0.1)"></div>
+        <p class="token-name">Warm White</p>
+        <p class="token-hex">#F5F3EE</p>
+        <p class="token-role">Light canvas · WSV, MITO, WES, WFF</p>
+      </div>
+    </div>
+
+    <p class="color-group-label">Entity Accent Colors</p>
+    <div class="token-grid">
+      <div class="token">
+        <div class="token-swatch" style="background:#7BA882"></div>
+        <p class="token-name">Garden Sage</p>
+        <p class="token-hex">#7BA882</p>
+        <p class="token-role">HOU only</p>
+      </div>
+      <div class="token">
+        <div class="token-swatch" style="background:#1DB954"></div>
+        <p class="token-name">Electric Emerald</p>
+        <p class="token-hex">#1DB954</p>
+        <p class="token-role">MITO only</p>
+      </div>
+      <div class="token">
+        <div class="token-swatch" style="background:#E02B1D"></div>
+        <p class="token-name">WES Red</p>
+        <p class="token-hex">#E02B1D</p>
+        <p class="token-role">WES only</p>
+      </div>
+      <div class="token">
+        <div class="token-swatch" style="background:#B05A3A"></div>
+        <p class="token-name">Terracotta</p>
+        <p class="token-hex">#B05A3A</p>
+        <p class="token-role">WFF only (interim)</p>
+      </div>
+      <div class="token">
+        <div class="token-swatch" style="background:#0D2E1A"></div>
+        <p class="token-name">Deep Forest</p>
+        <p class="token-hex">#0D2E1A</p>
+        <p class="token-role">MITO dark canvas</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TYPOGRAPHY -->
+  <section class="section" id="typography">
+    <p class="section-eyebrow">03 — Typography</p>
+    <h2 class="section-title">Type<br>System</h2>
+    <p class="section-intro">Two font families. One for impact, one for clarity. Barlow Condensed commands attention across every entity. Nunito Sans brings warmth and readability to body content — especially critical for wellness, food, and educational programming.</p>
+
+    <div class="type-specimens">
+      <div class="type-row">
+        <div class="type-meta-col">
+          <p class="type-role-label">Display / H1</p>
+          <p class="type-spec">Barlow Condensed<br>Weight 900<br>Uppercase<br>56–96px</p>
+        </div>
+        <div class="t-display t-h1" style="color:var(--gold-electric)">Brand Universe</div>
+      </div>
+      <div class="type-row">
+        <div class="type-meta-col">
+          <p class="type-role-label">Heading / H2</p>
+          <p class="type-spec">Barlow Condensed<br>Weight 900<br>Uppercase<br>40px</p>
+        </div>
+        <div class="t-display t-h2">House of Ubuntu</div>
+      </div>
+      <div class="type-row">
+        <div class="type-meta-col">
+          <p class="type-role-label">Subhead / H3</p>
+          <p class="type-spec">Barlow Condensed<br>Weight 700<br>Uppercase<br>28px</p>
+        </div>
+        <div class="t-display t-h3" style="font-weight:700">Adult Recess. Cultural Reclamation.</div>
+      </div>
+      <div class="type-row">
+        <div class="type-meta-col">
+          <p class="type-role-label">Eyebrow Label</p>
+          <p class="type-spec">Barlow Condensed<br>Weight 700<br>Uppercase, tracked<br>10–12px</p>
+        </div>
+        <div class="t-eyebrow">Washington Strategic Ventures — 2026</div>
+      </div>
+      <div class="type-row">
+        <div class="type-meta-col">
+          <p class="type-role-label">Body</p>
+          <p class="type-spec">Nunito Sans<br>Weight 300<br>15px / 1.7 leading</p>
+        </div>
+        <div class="t-body">Earth-centered, healing, intentional, restorative. We build community through play, nourishment, education, and culture. The gold thread connects everything we do — from the park to the stage to the classroom.</div>
+      </div>
+      <div class="type-row">
+        <div class="type-meta-col">
+          <p class="type-role-label">Body Medium</p>
+          <p class="type-spec">Nunito Sans<br>Weight 500<br>15px</p>
+        </div>
+        <div class="t-body-med">Further. Faster. Together. — The WSV mission statement carried across every entity in the brand universe.</div>
+      </div>
+      <div class="type-row">
+        <div class="type-meta-col">
+          <p class="type-role-label">Caption / Label</p>
+          <p class="type-spec">Nunito Sans<br>Weight 300<br>11px, tracked</p>
+        </div>
+        <div class="t-caption">House of Ubuntu · Streetlights NYC · Confidential 2026 · Washington Strategic Ventures</div>
+      </div>
+      <div class="type-row light">
+        <div class="type-meta-col">
+          <p class="type-role-label" style="color:#999">On Light Canvas</p>
+          <p class="type-spec" style="color:#999">Same families,<br>light backgrounds</p>
+        </div>
+        <div>
+          <div class="t-display t-h3 on-light" style="font-weight:700;font-size:24px;margin-bottom:8px">Washington Family Foundation</div>
+          <div class="t-body on-light">Building legacy through community investment, education, and intentional giving.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+    <p style="font-family:var(--font-display);font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--gold-electric);margin-bottom:10px">Font Stack (CSS / Web)</p>
+    <div style="background:#0E0E0C;border:1px solid var(--border-dark);border-radius:8px;padding:1.25rem 1.5rem;font-family:monospace;font-size:12px;color:#7BA882;line-height:2">
+      --font-display: 'Barlow Condensed', sans-serif;<br>
+      --font-body: 'Nunito Sans', sans-serif;<br>
+      <span style="color:var(--warm-grey)">/* Google Fonts import */</span><br>
+      @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Nunito+Sans:wght@300;400;500;600&display=swap');
+    </div>
+  </section>
+
+  <!-- DARK / LIGHT -->
+  <section class="section" id="mode">
+    <p class="section-eyebrow">04 — Dark vs. Light</p>
+    <h2 class="section-title">Mode<br>System</h2>
+    <p class="section-intro">Canvas choice is intentional, not default. Match the mode to the moment — time of day, content type, brand, and audience all inform which canvas to use.</p>
+
+    <div class="mode-cards">
+      <div class="mode-card">
+        <div class="mode-preview" style="background:#080808">
+          <p style="font-family:var(--font-display);font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold-electric)">Dark Mode — Night Black #080808</p>
+          <p style="font-family:var(--font-display);font-size:32px;font-weight:900;text-transform:uppercase;color:var(--cream);line-height:1;margin:6px 0">Evening energy.<br>Electric moments.</p>
+          <p style="font-size:12px;color:var(--warm-grey);font-weight:300;line-height:1.6">Night activations, social content, event flyers, performance moments. The gold pops hardest on black.</p>
+          <div class="mode-use-list">
+            <span class="use-chip">Streetlights</span>
+            <span class="use-chip">Event flyers</span>
+            <span class="use-chip">IG posts</span>
+            <span class="use-chip">WES content</span>
+            <span class="use-chip">Night events</span>
+          </div>
+        </div>
+        <div class="mode-footer">Text: Cream #F2F0EB · Accent: Electric Gold #F0A500 · Secondary: Warm Grey #8A8680</div>
+      </div>
+      <div class="mode-card">
+        <div class="mode-preview" style="background:#F5F3EE">
+          <p style="font-family:var(--font-display);font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold-deep)">Light Mode — Warm White #F5F3EE</p>
+          <p style="font-family:var(--font-display);font-size:32px;font-weight:900;text-transform:uppercase;color:var(--charcoal);line-height:1;margin:6px 0">Daytime clarity.<br>Professional trust.</p>
+          <p style="font-size:12px;color:#5a5855;font-weight:300;line-height:1.6">Documents, proposals, food content, wellness programming, daytime and morning activations.</p>
+          <div class="mode-use-list" style="margin-top:6px">
+            <span class="use-chip" style="color:#666;border-color:#ccc">WSV docs</span>
+            <span class="use-chip" style="color:#666;border-color:#ccc">WFF</span>
+            <span class="use-chip" style="color:#666;border-color:#ccc">Food content</span>
+            <span class="use-chip" style="color:#666;border-color:#ccc">Briefs</span>
+            <span class="use-chip" style="color:#666;border-color:#ccc">Morning events</span>
+          </div>
+        </div>
+        <div class="mode-footer" style="background:var(--warm-white);color:#888">Text: Charcoal #1C1C1A · Accent: Deep Gold #C8972A · Secondary: #5A5855</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENTITIES -->
+  <section class="section" id="wsv" style="border-top:3px solid var(--gold-deep)">
+    <p class="section-eyebrow">05 — Entity Profiles</p>
+    <h2 class="section-title" style="color:var(--gold-deep)">WSV</h2>
+    <p class="section-intro">Washington Strategic Ventures is the quiet holding company. It rarely leads — it enables. WSV appears on formal documents, legal filings, investor materials, and subsidiary partnerships. Its brand is intentionally restrained.</p>
+    <div class="entity-cards">
+      <div class="entity-card" style="--surface:#111111">
+        <div class="entity-preview" style="background:#1C1C1A" data-name="WSV">
+          <p class="entity-tag" style="color:var(--gold-deep)">Holding Company</p>
+          <p class="entity-name" style="color:var(--gold-deep)">Washington<br>Strategic Ventures</p>
+          <div class="entity-dots">
+            <div class="e-dot" style="background:var(--gold-deep)"></div>
+            <div class="e-dot" style="background:var(--warm-white)"></div>
+            <div class="e-dot" style="background:#1C1C1A"></div>
+          </div>
+        </div>
+        <div class="entity-body" style="background:#111">
+          <p class="entity-full-name">Washington Strategic Ventures</p>
+          <p class="entity-mission">Strategic holding company. Enables subsidiaries. Appears on formal, legal, and investor-facing materials only. Voice: institutional, confident, minimal.</p>
+          <p class="entity-palette-label">Palette</p>
+          <div class="palette-row">
+            <div class="palette-chip"><div class="p-swatch" style="background:#C8972A"></div><p class="p-hex">#C8972A</p><p class="p-name">Deep Gold</p></div>
+            <div class="palette-chip"><div class="p-swatch" style="background:#F5F3EE;border-color:rgba(255,255,255,0.15)"></div><p class="p-hex">#F5F3EE</p><p class="p-name">Warm White</p></div>
+            <div class="palette-chip"><div class="p-swatch" style="background:#1C1C1A"></div><p class="p-hex">#1C1C1A</p><p class="p-name">Charcoal</p></div>
+          </div>
+          <p class="entity-mode" style="margin-top:10px;font-size:11px;color:var(--warm-grey)">Default: Light. Dark acceptable for formal presentations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="hou" style="border-top:3px solid var(--gold-electric)">
+    <h2 class="section-title">House<br>of Ubuntu</h2>
+    <p class="section-intro">The primary consumer-facing wellness brand. Earth-centered, healing, and communal. HOU is the house — everything it produces, from Streetlights NYC events to food programming, lives under this identity.</p>
+    <div class="entity-cards">
+      <div class="entity-card" style="--surface:#111111">
+        <div class="entity-preview" style="background:#080808" data-name="HOU">
+          <p class="entity-tag" style="color:var(--hou-sage)">Wellness · Health · Community</p>
+          <p class="entity-name" style="color:var(--gold-electric)">House of<br>Ubuntu</p>
+          <div class="entity-dots">
+            <div class="e-dot" style="background:var(--gold-electric)"></div>
+            <div class="e-dot" style="background:var(--hou-sage)"></div>
+            <div class="e-dot" style="background:var(--cream)"></div>
+            <div class="e-dot" style="background:#080808"></div>
+          </div>
+        </div>
+        <div class="entity-body" style="background:#111">
+          <p class="entity-full-name">House of Ubuntu</p>
+          <p class="entity-mission">Earth-centered, healing, intentional, restorative. Community wellness through play, nourishment, movement, and culture. Voice: warm, nostalgic, culturally specific.</p>
+          <p class="entity-palette-label">Palette</p>
+          <div class="palette-row">
+            <div class="palette-chip"><div class="p-swatch" style="background:#F0A500"></div><p class="p-hex">#F0A500</p><p class="p-name">Electric Gold</p></div>
+            <div class="palette-chip"><div class="p-swatch" style="background:#7BA882"></div><p class="p-hex">#7BA882</p><p class="p-name">Garden Sage</p></div>
+            <div class="palette-chip"><div class="p-swatch" style="background:#F2F0EB;border-color:rgba(255,255,255,0.15)"></div><p class="p-hex">#F2F0EB</p><p class="p-name">Cream</p></div>
+            <div class="palette-chip"><div class="p-swatch" style="background:#080808"></div><p class="p-hex">#080808</p><p class="p-name">Night Black</p></div>
+          </div>
+          <p class="entity-mode">Default: Dark for events + social. Light for food, wellness documents, and daytime content.</p>
+        </div>
+      </div>
+      <div class="entity-card" style="--surface:#111111">
+        <div class="entity-preview" style="background:#080808;border-top:2px solid var(--gold-electric)" data-name="Streetlights">
+          <p class="entity-tag" style="color:var(--gold-electric)">Event Series under HOU</p>
+          <p class="entity-name" style="color:var(--cream);font-size:22px">Streetlights NYC</p>
+          <p style="font-size:12px;color:var(--warm-grey);font-weight:300;margin-top:4px">Adult Recess. Cultural Reclamation. Community Play.</p>
+        </div>
+        <div class="entity-body" style="background:#111">
+          <p class="entity-full-name">Streetlights NYC</p>
+          <p class="entity-mission">Event programming series under HOU. Not a separate brand — an HOU activation. Inherits the full HOU palette. Always dark canvas. Always gold-forward.</p>
+          <p class="entity-palette-label">Inherits HOU Palette</p>
+          <div class="palette-row">
+            <div class="palette-chip"><div class="p-swatch" style="background:#F0A500"></div><p class="p-hex">#F0A500</p><p class="p-name">Electric Gold</p></div>
+            <div class="palette-chip"><div class="p-swatch" style="background:#080808"></div><p class="p-hex">#080808</p><p class="p-name">Night Black</p></div>
+            <div class="palette-chip"><div class="p-swatch" style="background:#F2F0EB;border-color:rgba(255,255,255,0.15)"></div><p class="p-hex">#F2F0EB</p><p class="p-name">Cream</p></div>
+          </div>
+          <p class="entity-mode">Always dark. Gold primary. Sage as secondary accent on cards and tags.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="mito" style="border-top:3px solid var(--mito-green)">
+    <h2 class="section-title" style="color:var(--mito-green)">Mito<br>chondrion</h2>
+    <p class="section-intro">Education, innovation, and workforce development. Forward-looking, credible, and growth-oriented. MITO's palette — Electric Gold + Emerald Green — signals prosperity, intelligence, and momentum. The powerhouse of the cell.</p>
+    <div class="entity-cards">
+      <div class="entity-card">
+        <div class="entity-preview" style="background:var(--mito-forest)" data-name="MITO">
+          <p class="entity-tag" style="color:var(--mito-green)">Education · Innovation · Workforce</p>
+          <p class="entity-name" style="color:var(--gold-electric)">Mitochon<br>drion</p>
+          <div class="entity-dots">
+            <div class="e-dot" style="background:var(--gold-electric)"></div>
+            <div class="e-dot" style="background:var(--mito-green)"></div>
+            <div class="e-dot" style="background:var(--warm-white)"></div>
+            <div class="e-dot" style="background:var(--mito-forest)"></div>
+          </div>
+        </div>
+        <div class="entity-body" style="background:#111">
+          <p class="entity-full-name">Mitochondrion</p>
+          <p class="entity-mission">The powerhouse. Education programming, workforce development, and innovation initiatives. Forward-looking, credible, institutional. Voice: clear, intelligent, empowering.</p>
+          <p class="entity-palette-label">Palette</p>
+          <div class="palette-row">
+            <div class="palette-chip"><div class="p-swatch" style="background:#F0A500"></div><p class="p-hex">#F0A500</p><p class="p-name">Electric Gold</p></div>
+            <div class="palette-chip"><div class="p-swatch" style="background:#1DB954"></div><p class="p-hex">#1DB954</p><p class="p-name">Elec. Emerald</p></div>
+            <div class="palette-chip"><div class="p-swatch" style="background:#F5F3EE;border-color:rgba(255,255,255,0.15)"></div><p class="p-hex">#F5F3EE</p><p class="p-name">Warm White</p></div>
+            <div class="palette-chip"><div class="p-swatch" style="background:#0D2E1A"></div><p class="p-hex">#0D2E1A</p><p class="p-name">Deep Forest</p></div>
+          </div>
+          <p class="entity-mode">Default: Light for documents and programs. Dark Forest for event and social content.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="wes" style="border-top:3px solid var(--wes-red)">
+    <h2 class="section-title" style="color:var(--wes-red)">Washington<br>Entertainment</h2>
+    <p class="section-intro">Content creation, entertainment production, and media ventures. Bold, cinematic, and culturally sharp. WES leads with red — energy, drama, and presence. Gold plays supporting role as the premium accent.</p>
+    <div class="entity-cards">
+      <div class="entity-card">
+        <div class="entity-preview" style="background:#1A0808" data-name="WES">
+          <p class="entity-tag" style="color:var(--wes-red)">Content · Entertainment · Media</p>
+          <p class="entity-name" style="color:var(--cream)">Washington<br>Entertainment<br>Studios</p>
+          <div class="entity-dots">
+            <div class="e-dot" style="background:var(--wes-red)"></div>
+            <div class="e-dot" style="background:var(--gold-electric)"></div>
+            <div class="e-dot" style="background:var(--warm-white)"></div>
+          </div>
+        </div>
+        <div class="entity-body" style="background:#111">
+          <p class="entity-full-name">Washington Entertainment Studios</p>
+          <p class="entity-mission">Bold, cinematic, culturally sharp. Entertainment and content production. Voice: confident, dynamic, culturally fluent. Red leads — gold accents. Always high contrast.</p>
+          <p class="entity-palette-label">Palette</p>
+          <div class="palette-row">
+            <div class="palette-chip"><div class="p-swatch" style="background:#E02B1D"></div><p class="p-hex">#E02B1D</p><p class="p-name">WES Red</p></div>
+            <div class="palette-chip"><div class="p-swatch" style="background:#F0A500"></div><p class="p-hex">#F0A500</p><p class="p-name">Electric Gold</p></div>
+            <div class="palette-chip"><div class="p-swatch" style="background:#F5F3EE;border-color:rgba(255,255,255,0.15)"></div><p class="p-hex">#F5F3EE</p><p class="p-name">Warm White</p></div>
+          </div>
+          <p class="entity-mode">Default: Dark cinematic. Light for press kits, press releases, and formal media documents.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="wff" style="border-top:3px solid var(--wff-terra)">
+    <h2 class="section-title" style="color:var(--wff-terra)">Washington<br>Family Foundation</h2>
+    <p class="section-intro">The nonprofit arm. Community investment, education access, and intentional giving. Brand identity is interim — will be fully developed as the entity grows. Warm, grounded, and rooted in legacy.</p>
+    <div class="entity-cards">
+      <div class="entity-card">
+        <div class="entity-preview" style="background:#F5F3EE" data-name="WFF">
+          <p class="entity-tag" style="color:var(--wff-terra)">Nonprofit · Community · Legacy</p>
+          <p class="entity-name" style="color:var(--charcoal);font-size:20px">Washington<br>Family Foundation</p>
+          <div class="entity-dots">
+            <div class="e-dot" style="background:var(--gold-electric)"></div>
+            <div class="e-dot" style="background:var(--wff-terra)"></div>
+            <div class="e-dot" style="background:var(--warm-white)"></div>
+          </div>
+        </div>
+        <div class="entity-body" style="background:#111">
+          <p class="entity-full-name">Washington Family Foundation</p>
+          <p class="entity-mission">Community investment, education, and legacy giving. Interim brand identity — full development forthcoming. Voice: warm, trustworthy, rooted in community service.</p>
+          <p class="entity-palette-label">Palette (Interim)</p>
+          <div class="palette-row">
+            <div class="palette-chip"><div class="p-swatch" style="background:#F0A500"></div><p class="p-hex">#F0A500</p><p class="p-name">Electric Gold</p></div>
+            <div class="palette-chip"><div class="p-swatch" style="background:#B05A3A"></div><p class="p-hex">#B05A3A</p><p class="p-name">Terracotta</p></div>
+            <div class="palette-chip"><div class="p-swatch" style="background:#F5F3EE;border-color:rgba(255,255,255,0.15)"></div><p class="p-hex">#F5F3EE</p><p class="p-name">Warm White</p></div>
+          </div>
+          <p class="entity-mode">Default: Light. Community-facing and accessible.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RULES -->
+  <section class="section" id="rules">
+    <p class="section-eyebrow">06 — Usage Rules</p>
+    <h2 class="section-title">Do's &amp;<br>Don'ts</h2>
+    <p class="section-intro">These rules protect the coherence of the WSV brand universe. Breaking them dilutes the system — following them builds recognition across every touchpoint.</p>
+
+    <div class="rules-grid">
+      <div class="rule-card do">
+        <p class="rule-label do">Always do</p>
+        <p class="rule-item">Use Electric Gold (#F0A500) as the universal connective thread across all entities</p>
+        <p class="rule-item">Use Barlow Condensed for all display headlines — this is the universal voice</p>
+        <p class="rule-item">Match the canvas (dark vs. light) to the content type and time of day</p>
+        <p class="rule-item">Introduce cultural games with their origin story — the learning is part of the experience</p>
+        <p class="rule-item">Use entity accent colors only for their assigned brand — Sage is HOU, Emerald is MITO, Red is WES</p>
+        <p class="rule-item">Use Cream (#F2F0EB) for HOU, Warm White (#F5F3EE) for all other entities on light canvas</p>
+        <p class="rule-item">Allow WSV to remain the quiet parent — it rarely leads in consumer-facing contexts</p>
+        <p class="rule-item">Maintain generous whitespace — the brands breathe best when not crowded</p>
+      </div>
+      <div class="rule-card dont">
+        <p class="rule-label dont">Never do</p>
+        <p class="rule-item">Mix entity accent colors across brands — Sage never appears on MITO content; Emerald never on HOU</p>
+        <p class="rule-item">Use blue in any entity palette — it is deliberately excluded from the universe</p>
+        <p class="rule-item">Use corporate wellness language, generic fitness brand aesthetics, or cringe wellness jargon</p>
+        <p class="rule-item">Put a price gate on Streetlights open play — free always, no exceptions</p>
+        <p class="rule-item">Use purple gradients on white backgrounds or any generic AI-default aesthetic</p>
+        <p class="rule-item">Position Streetlights NYC as a subsidiary or vertical — it is an HOU event series</p>
+        <p class="rule-item">Approach sponsors before 3+ documented public sessions with real photos and headcounts</p>
+        <p class="rule-item">Swap Cream and Warm White between HOU and other entities — the warmth is intentional</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK REFERENCE -->
+  <section class="section light" id="reference">
+    <p class="section-eyebrow">07 — Quick Reference</p>
+    <h2 class="section-title">Color<br>Reference</h2>
+    <p class="section-intro">A single-glance reference for all confirmed color tokens across the WSV brand universe. Keep this open when building any brand asset.</p>
+
+    <table class="ref-table" style="color:var(--charcoal)">
+      <thead>
+        <tr>
+          <th>Token Name</th>
+          <th>Hex</th>
+          <th>Entity</th>
+          <th>Use</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Electric Gold</td><td><span class="hex-code">#F0A500</span></td><td>All entities</td><td>Primary accent — the gold thread</td></tr>
+        <tr><td>Deep Gold</td><td><span class="hex-code">#C8972A</span></td><td>WSV primary</td><td>Formal, muted gold applications</td></tr>
+        <tr><td>Gold Tint</td><td><span class="hex-code">#FFF3D0</span></td><td>All entities</td><td>Backgrounds, highlights, subtle warmth</td></tr>
+        <tr><td>Night Black</td><td><span class="hex-code">#080808</span></td><td>All entities</td><td>Dark canvas — events, social, night content</td></tr>
+        <tr><td>Charcoal</td><td><span class="hex-code">#1C1C1A</span></td><td>All entities</td><td>Dark surfaces, WSV backgrounds</td></tr>
+        <tr><td>Warm Grey</td><td><span class="hex-code">#8A8680</span></td><td>All entities</td><td>Secondary and tertiary text</td></tr>
+        <tr><td>Cream</td><td><span class="hex-code">#F2F0EB</span></td><td>HOU only</td><td>Body text on dark · HOU light canvas</td></tr>
+        <tr><td>Warm White</td><td><span class="hex-code">#F5F3EE</span></td><td>WSV, MITO, WES, WFF</td><td>Light canvas for all non-HOU entities</td></tr>
+        <tr><td>Garden Sage</td><td><span class="hex-code">#7BA882</span></td><td>HOU only</td><td>Secondary accent — wellness, food, nature content</td></tr>
+        <tr><td>Electric Emerald</td><td><span class="hex-code">#1DB954</span></td><td>MITO only</td><td>Primary accent — growth, innovation, forward motion</td></tr>
+        <tr><td>Deep Forest</td><td><span class="hex-code">#0D2E1A</span></td><td>MITO only</td><td>Dark canvas for MITO event and social content</td></tr>
+        <tr><td>WES Red</td><td><span class="hex-code">#E02B1D</span></td><td>WES only</td><td>Primary brand color for entertainment content</td></tr>
+        <tr><td>Terracotta</td><td><span class="hex-code">#B05A3A</span></td><td>WFF (interim)</td><td>Community warmth — nonprofit-facing content</td></tr>
+      </tbody>
+    </table>
+
+    <div class="divider" style="background:rgba(0,0,0,0.08)"></div>
+
+    <p style="font-family:var(--font-display);font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:12px">Typography Reference</p>
+    <table class="ref-table" style="color:var(--charcoal)">
+      <thead>
+        <tr>
+          <th>Role</th>
+          <th>Font</th>
+          <th>Weight</th>
+          <th>Size</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Display / Hero</td><td>Barlow Condensed</td><td>900</td><td>56–96px · uppercase</td></tr>
+        <tr><td>H2 Heading</td><td>Barlow Condensed</td><td>900</td><td>40px · uppercase</td></tr>
+        <tr><td>H3 Subhead</td><td>Barlow Condensed</td><td>700</td><td>28px · uppercase</td></tr>
+        <tr><td>Eyebrow Label</td><td>Barlow Condensed</td><td>700</td><td>10–12px · uppercase · tracked</td></tr>
+        <tr><td>Body</td><td>Nunito Sans</td><td>300</td><td>15px · 1.7 leading</td></tr>
+        <tr><td>Body Medium</td><td>Nunito Sans</td><td>500</td><td>15px</td></tr>
+        <tr><td>Caption / Label</td><td>Nunito Sans</td><td>300</td><td>11px · lightly tracked</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer class="doc-footer">
+    <div>
+      <p class="footer-brand">Washington Strategic Ventures</p>
+      <p class="footer-meta">Brand Universe Guidelines v1.0 &nbsp;·&nbsp; <span class="footer-gold">May 2026</span> &nbsp;·&nbsp; Confidential — WSV Internal</p>
+    </div>
+    <p class="footer-meta">Further. Faster. Together.</p>
+  </footer>
+
+</main>
+
+<script>
+// Active nav link on scroll
+const sections = document.querySelectorAll('[id]');
+const navLinks = document.querySelectorAll('.nav a');
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(s => {
+    if (window.scrollY >= s.offsetTop - 120) current = s.id;
+  });
+  navLinks.forEach(a => {
+    a.style.color = a.getAttribute('href') === '#' + current ? 'var(--cream)' : '';
+    a.style.borderLeftColor = a.getAttribute('href') === '#' + current ? 'var(--gold-electric)' : 'transparent';
+  });
+});
+</script>
+
+</body>
+</html>
